@@ -1,0 +1,45 @@
+<template name="history">
+  <div class="user-history">
+    <h2 id ="tweetedByHeader">Tweeted by @<a href="http://www.twitter.com/{{ username }}" target="_blank">{{ username }}</a></h2>
+    {{> tweetThis }}
+    <div class="player">
+      {{> player }}
+    </div>
+    <div class="track-list">
+      <ul>
+        {{# each tracks }}
+        <li class="track">
+          {{> track }}
+        </li>
+        {{/ each }}
+        {{# if noSharedTracks }}
+        <li class="track">
+          <div class="track-name">
+            No Shared Tracks
+          </div>
+        </li>
+        {{/ if }}
+      </ul>
+    </div>
+  </div>
+</template>
+
+<template name="track">
+  <div class="track-name"
+       shortlink="{{ shortlink }}">{{ trackname }}
+  </div>
+</template>
+
+<template name="player">
+  <iframe
+     src="https://embed.spotify.com/?uri=spotify:track:{{ currentTrackId }}"
+     width="300"
+     height="{{ playerHeight }}"
+     frameborder="0"
+     allowtransparency="true">
+  </iframe>
+</template>
+
+<template name="tweetThis">
+  <iframe width="100" height="50" src="http://platform.twitter.com/widgets/tweet_button.1363148939.html#_=1365283252340&amp;count=horizontal&amp;hashtags=spotifind&amp;id=twitter-widget-0&amp;lang=en&amp;original_referer={{ currentUrl }}&amp;size=m&amp;text=Check%20out%20my%20most%20recent%20playlist%20on%20Spotifind&amp;url={{ currentUrl }}" />
+</template>

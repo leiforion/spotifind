@@ -1,0 +1,147 @@
+@import url(http://fonts.googleapis.com/css?family=Questrial);
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans);
+
+header, footer, .pageBody {
+    width: 300px;
+    margin: 10px auto;
+    clear: both;
+}
+
+footer {
+    padding: 100px;
+}
+
+.player {
+    width: 300px;
+    margin: 50px auto 25px auto;
+}
+
+#pageBody {
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 3em;
+    padding-top: 3em;
+}
+
+.user-history h2{
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.track-name {
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom: 1px solid #aaa;
+    cursor: pointer;
+}
+
+.selected {
+    background: #eee;
+}
+
+/* type */
+
+body {
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: 400;
+    background: -webkit-radial-gradient(#d5d5d5 0%, #7d7d7d 100%)
+}
+
+a {
+	color: #0491bc
+}
+
+p {
+	font-size: 1em;
+        line-height: 1.2em;
+}
+
+#find-user {
+	margin-bottom: 20px;
+        margin-top: 20px;
+}
+
+button {
+	border-color: #3d3d3d;
+	border-width: 1px;
+	background-color: #d0d0d0;
+	font-family: 'Droid Sans', sans-serif;
+}
+
+input {
+	border-color: #3d3d3d;
+	border-width: 1px;
+	background-color: #d0d0d0;
+	font-family: 'Droid Sans', sans-serif;
+	height: 1.47em;
+}
+
+
+h1 {
+    font-size: 2em;
+    font-family: 'Questrial', sans-serif;
+    font-weight: 200;
+    border-bottom: 1px solid black;
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+h2 {
+    font-size: 2em;
+    margin-top: 1em;
+    font-family: 'Questrial', sans-serif;
+    font-weight: 700;
+}
+
+h4 {
+    margin-top: 10px;
+    letter-spacing: 50px;
+}
+
+@media all and (min-width: 728px) {
+    header, footer {
+        width: 62%;
+        text-align: center;
+    }
+
+    #pageBody {
+        width: 62%;
+        min-width: 600px;
+        max-width: 800px;
+    }
+
+    header {
+        letter-spacing: 3em;
+    }
+
+    .player {
+        float: left;
+        margin: 0px;
+    }
+
+    .track-list {
+        width: 50%;
+        float: right;
+        margin: 0px;
+    }
+
+    .track-name {
+        padding: 10px 0px;
+        padding-left: 20px;
+    }
+
+    .user-history h2 {
+        clear: both;
+        width: 50%;
+        float: right;
+        font-size: 2em;
+        position: relative;
+        left: 20px;
+        margin: 0px;
+        margin-bottom: 20px;
+    }
+}
